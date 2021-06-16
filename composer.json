@@ -1,0 +1,50 @@
+{
+    "name": "yahve/mvc",
+    "description": "Plantilla MVC",
+    "minimum-stability": "beta",
+    "type": "proyecto",
+    "keywords": ["mvc", "php", "poo", "programacionweb"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alberto",
+            "email": "cobalsky@aol.com",
+            "homepage": "https://t.me/wangwoong",
+            "role": "propietario"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "phpmailer/phpmailer": "v6.4.1",
+        "ext-gd": "*",
+        "ext-soap": "*",
+        "php2wsdl/php2wsdl": "0.6.1",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "mvc\\": "Core//",
+            "mvc\\Controllers\\": "Core/Controllers/",
+            "mvc\\Controllers\\Base\\": "Core/Controllers/Base/",
+            "mvc\\Models\\": "Core/Models/",
+            "mvc\\Models\\Base\\": "Core/Models/Base/",
+            "mvc\\Entidades\\": "Core/Entidades/",
+            "mvc\\Entidades\\Base\\": "Core/Entidades/Base/",
+            "mvc\\Repositorios\\": "Core/Repositorios/",
+            "mvc\\Repositorios\\Base\\": "Core/Repositorios/Base/",
+
+            "mvc\\Librerias\\": "Core/Librerias/",
+            "mvc\\Idiomas\\": "Core/Idiomas/",
+            "mvc\\Ws\\": "Core/Ws/",
+            "mvc\\Res\\": "Core/Res/",
+            "mvc\\Batch\\": "Core/Batch/",
+            "mvc\\Correos\\": "Core/Correos/"
+        }
+
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    }
+}
